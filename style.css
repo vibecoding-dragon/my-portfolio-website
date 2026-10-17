@@ -1,0 +1,1524 @@
+/* ==========================================================================
+   1. ДИЗАЙН-СИСТЕМА: ПЕРЕМЕННЫЕ
+   ========================================================================== */
+:root {
+  --bg-color: #FFFFFF;
+  --text-main: #000000;
+  --text-muted: #737373;
+  --color-gray: #737373;
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   2. СБРОС СТИЛЕЙ & БАЗОВЫЕ НАСТРОЙКИ
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  pointer-events: auto;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   3. СЕТКА И СТРУКТУРА (Десктоп 64px)
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px; 
+}
+
+/* ==========================================================================
+   4. ТИПОГРАФИКА
+   ========================================================================== */
+h1, .h1 { font-size: 64px; font-weight: 700; line-height: 72px; }
+h3, .h3 { font-size: 36px; font-weight: 700; line-height: 48px; }
+h5, .h5 { font-size: 24px; font-weight: 700; line-height: 36px; }
+h6, .h6 { font-size: 24px; font-weight: 600; line-height: 24px; }
+.body-1 { font-size: 18px; font-weight: 500; line-height: 28px; }
+.body-3 { font-size: 16px; font-weight: 500; line-height: 24px; }
+
+/* ==========================================================================
+   5. КОМПОНЕНТ: HEADER & СВИТЧЕР
+   ========================================================================== */
+.header {
+  width: 100%;
+  background-color: #FFFFFF; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header__container {
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__link {
+  color: var(--text-main);
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+.header__link--active {
+  font-weight: 700;
+}
+
+.header__nav-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.header__mobile-socials {
+  display: none;
+}
+
+.lang-switcher-container {
+  display: inline-flex;
+  gap: 4px;
+  background-color: var(--color-gray);
+  padding: 4px;
+  border-radius: 24px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  height: 32px;
+  border-radius: 24px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn--active {
+  background-color: #FFFFFF !important;
+  color: var(--text-main) !important;
+}
+
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-main);
+  transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   6. КОМПОНЕНТ: СТАТИЧНЫЙ ФУТЕР (ДЕСКТОП)
+   ========================================================================== */
+.footer {
+  width: 100%;
+  background-color: var(--bg-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 64px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.footer__link:hover {
+  opacity: 0.6;
+  transform: translateY(-2px);
+}
+
+.footer__icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* ==========================================================================
+   7. СЕКЦИЯ HERO И СЕТКА ПРОЕКТОВ (ДЕСКТОП)
+   ========================================================================== */
+.main-content {
+  padding-top: 104px;
+}
+
+.hero__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero__subtitle {
+  color: var(--text-muted);
+  max-width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px !important;
+  display: block !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  overflow: visible !important;
+  height: auto !important; 
+  max-height: none !important;
+  -webkit-line-clamp: unset !important;
+  line-clamp: unset !important; 
+  -webkit-box-orient: unset !important;
+}
+
+.projects__title {
+  margin-bottom: 40px !important;
+}
+
+.projects__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+.project-card__link {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project-card__image-wrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #F5F5F5;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card__link:hover .project-card__image {
+  transform: scale(1.02);
+}
+
+.project-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-card__desc {
+  color: var(--text-muted);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.project-card--big .project-card__image-wrapper {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  max-height: 648px; 
+}
+
+.projects__subgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  width: 100%;
+}
+
+.project-card--small .project-card__image-wrapper {
+  aspect-ratio: 352 / 264;
+  height: auto;
+}
+
+/* ==========================================================================
+   8. СТРАНИЦА: О БО МНЕ (ДЕСКТОП)
+   ========================================================================== */
+.about-page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-page__main-title {
+  margin-bottom: 80px;
+}
+
+.about-intro,
+.about-stats,
+.about-text-block {
+  margin-bottom: 48px;
+}
+
+.about-text-block:nth-last-of-type(2) {
+  margin-bottom: 40px;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-intro__image-wrapper {
+  width: 100%;
+  aspect-ratio: 567 / 382;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #F5F5F5;
+}
+
+.about-intro__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-intro__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-intro__content h3 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.about-intro__content p {
+  color: var(--text-muted);
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 32px;
+  background: linear-gradient(90deg, rgba(254, 80, 124, 0.20) 0%, rgba(84, 185, 179, 0.20) 100%);
+  border-radius: 24px;
+  width: 100%;
+}
+
+.about-stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  flex: 1 1 0;
+}
+
+.about-stats__number {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.about-stats__label {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-main);
+  text-align: center;
+  width: 100%;
+}
+
+.about-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-text-block p {
+  color: var(--text-muted);
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 0;
+}
+
+.about-gallery__item {
+  width: 100%;
+  aspect-ratio: 352 / 264;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #F5F5F5;
+}
+
+.about-gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   8.3. УЛЬТРАШИРОКИЙ АДАПТИВ (ОТ 1400px) — СЕТКА 2х2
+   ========================================================================== */
+@media (min-width: 1400px) {
+  .projects__grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 48px !important;
+  }
+
+  .projects__subgrid {
+    display: contents !important;
+  }
+
+  .project-card--big .project-card__image-wrapper,
+  .project-card--small .project-card__image-wrapper {
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: 352 / 264 !important;
+  }
+
+  .case-other__grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 48px !important;
+  }
+}
+
+/* ==========================================================================
+   8.4. АДАПТИВ ТЕКСТА И БЛОКОВ КЕЙСА (ДО 1000px)
+   ========================================================================== */
+@media (max-width: 1000px) {
+  .hero__subtitle br {
+    display: none !important;
+  }
+
+  /* Все текстово-графические блоки кейса перестраиваются в столбик:
+     картинка сверху, текст снизу */
+  .case-workflow__text-cols {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* Pic + Text (картинка уже первая в HTML → просто в одну колонку) */
+  .case-workflow__item--split {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* Text + Pic (в HTML текст первый, картинка вторая → column-reverse,
+     чтобы картинка оказалась сверху) */
+  .case-workflow__item--reverse {
+    flex-direction: column-reverse !important;
+    gap: 24px !important;
+  }
+  .case-overview {
+    grid-template-columns: 1fr !important;
+  }
+  .case-reflection {
+    grid-template-columns: 1fr !important;
+  }
+  .case-other__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 32px !important;
+  }
+    .case-overview {
+    grid-template-columns: 1fr !important;
+  }
+  .case-reflection {
+    grid-template-columns: 1fr !important;
+  }
+ .case-other__grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+}
+
+}
+
+/* ==========================================================================
+   8.5. ПРОМЕЖУТОЧНЫЙ АДАПТИВ СЕТКИ (ДО 1100px)
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .projects__subgrid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .project-card--big .project-card__image-wrapper {
+    max-height: 500px !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+  .project-card__desc {
+    font-size: 18px !important;
+  }
+  .project-card--small .project-card__image-wrapper {
+    aspect-ratio: 4 / 3 !important;
+    max-height: 500px;
+  }
+  .projects__grid {
+    gap: 40px !important;
+  }
+}
+
+/* ==========================================================================
+   8.6. СТРАНИЦА: РЕЗЮМЕ (ДЕСКТОП)
+   ========================================================================== */
+.resume-page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.resume-page__title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 80px;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.resume-section__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-main);
+}
+
+.resume-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.resume-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.resume-item__date {
+  width: 320px;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--text-muted);
+}
+
+.resume-item__content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resume-item__position {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-main);
+}
+
+.resume-item__desc {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--text-muted);
+}
+
+.resume-item__desc ul {
+  list-style: disc;
+  padding-left: 24px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resume-item__desc li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   8.7. СТРАНИЦА: КЕЙС (SFERA.PULSE, WELLMAX И ДР.)
+   ========================================================================== */
+
+.case-hero {
+  padding-top: 80px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.case-hero__top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.case-hero__tags {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.case-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 18px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.case-tag--filled {
+  background: #000;
+  color: #fff;
+}
+
+.case-tag--outline {
+  border: 2px solid #737373;
+  color: #737373;
+  padding: 0 10px;
+}
+
+.case-hero__title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.case-hero__title {
+  font-size: 56px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+.case-hero__subtitle {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.case-hero__cover {
+  width: 100%;
+  aspect-ratio: 1152 / 600;
+  border-radius: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+.case-hero__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- ЧЁРНЫЕ СЕКЦИИ --- */
+.case-dark {
+  background: #000;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.case-dark + .case-dark {
+  padding-top: 0;
+}
+
+.case-section__title {
+  font-size: 56px;
+  line-height: 72px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.case-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: flex-start;
+}
+
+.case-overview__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.case-overview__text strong {
+  font-weight: 500;
+  margin-top: 28px;
+}
+
+.case-overview__text strong:first-child {
+  margin-top: 0;
+}
+
+.case-overview__text p {
+  font-weight: 300;
+  margin: 0;
+}
+
+.case-overview__img {
+  width: 100%;
+  border-radius: 0;
+  display: block;
+}
+
+/* --- ДИЗАЙН-ПРОЦЕСС --- */
+.case-workflow {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.case-workflow__item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.case-workflow__item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0;
+  display: block;
+}
+
+.case-workflow__item--metrics img {
+  aspect-ratio: 1152 / 560;
+}
+
+/* --- Сплит-блок: картинка + текст (Pic+Text) --- */
+.case-workflow__item--split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: flex-start;
+}
+
+.case-workflow__item--split img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0;
+  display: block;
+}
+
+/* --- Обратный сплит-блок: текст + картинка (Text+Pic) --- */
+.case-workflow__item--reverse {
+  flex-direction: row;
+  gap: 44px;
+  align-items: flex-start;
+}
+
+.case-workflow__item--reverse > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* --- Вертикальный стек внутри split-ячейки (заголовок + картинка) --- */
+.case-workflow__col-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.case-workflow__text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.case-workflow__text p {
+  margin: 0 0 28px;
+}
+
+.case-workflow__text p:last-child {
+  margin-bottom: 0;
+}
+
+.case-workflow__text strong {
+  font-weight: 500;
+}
+
+.case-workflow__text ol {
+  list-style: decimal;
+  padding-left: 28px;
+  margin: 0 0 28px;
+}
+
+.case-workflow__text ol:last-child {
+  margin-bottom: 0;
+}
+
+.case-workflow__text ol li {
+  margin: 0;
+  padding-left: 4px;
+}
+
+/* --- Блок из двух текстовых колонок без картинки (Text+Text) --- */
+.case-workflow__text-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: flex-start;
+}
+
+.case-workflow__text-cols > div {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.case-workflow__text-cols p {
+  margin: 0 0 28px;
+}
+
+.case-workflow__text-cols p:last-child {
+  margin-bottom: 0;
+}
+
+.case-workflow__text-cols strong {
+  font-weight: 500;
+}
+
+.case-workflow__text-cols ol {
+  list-style: decimal;
+  padding-left: 28px;
+  margin: 0 0 28px;
+}
+
+.case-workflow__text-cols ol:last-child {
+  margin-bottom: 0;
+}
+
+.case-workflow__text-cols ol li {
+  margin: 0;
+  padding-left: 4px;
+}
+
+/* --- Общие правила для списков <ul> --- */
+.case-workflow__text-cols ul,
+.case-workflow__text ul {
+  list-style: disc;
+  padding-left: 28px;
+  margin: 0 0 28px;
+}
+
+.case-workflow__text-cols ul:last-child,
+.case-workflow__text ul:last-child {
+  margin-bottom: 0;
+}
+
+.case-workflow__text-cols ul li,
+.case-workflow__text ul li {
+  margin: 0;
+  padding-left: 4px;
+}
+
+/* --- Подпись-абзац прямо перед <ol>/<ul> — без отступа (в Figma через <br>) --- */
+.case-workflow__text p:has(+ ol),
+.case-workflow__text p:has(+ ul),
+.case-workflow__text-cols p:has(+ ol),
+.case-workflow__text-cols p:has(+ ul) {
+  margin-bottom: 0 !important;
+}
+
+/* --- Подпись к картинке и заголовок внутри workflow --- */
+.case-workflow__caption {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.case-workflow__title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+/* Модификатор: заголовок внутри колонки (явное центрирование на десктопе).
+   На мобилке базовое правило с !important оставляет заголовок слева. */
+.case-workflow__title--in-column {
+  text-align: center;
+}
+
+/* --- РЕФЛЕКСИЯ --- */
+.case-reflection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+}
+
+.case-reflection__col {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.case-reflection__col strong {
+  font-weight: 500;
+  display: block;
+}
+
+.case-reflection__col b {
+  font-weight: 500;
+}
+
+.case-reflection__col p {
+  margin: 0;
+}
+
+/* --- ДРУГИЕ ПРОЕКТЫ --- */
+.case-other {
+  padding: 80px 0;
+}
+
+.case-other__title {
+  font-size: 56px;
+  line-height: 72px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.case-other__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   9. МОБИЛЬНЫЙ АДАПТИВ (ДО 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px; 
+  }
+
+  .main-content {
+    padding-top: 84px !important;
+  }
+
+  .header__container { 
+    height: 84px; 
+  }
+  
+  .header__burger { 
+    display: flex !important; 
+  }
+  
+  .header__burger--active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+  .header__burger--active span:nth-child(2) { opacity: 0; }
+  .header__burger--active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+  /* МОБИЛЬНАЯ ШТОРКА */
+  .header__nav {
+    position: fixed;
+    top: 84px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 84px);
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: right 1s cubic-bezier(0.22, 1, 0.36, 1);
+    padding: 0;
+    gap: 0;
+  }
+
+  .header__nav--active { 
+    right: 0; 
+  }
+
+  .header__menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .header__menu a {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    padding: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.25s ease;
+  }
+
+  .header__menu a:hover,
+  .header__menu a:active,
+  .header__menu a:focus {
+    background-color: #737373;
+    color: #FFFFFF !important;
+    outline: none;
+  }
+
+  .header__nav-bottom {
+    width: 100%;
+    justify-content: space-between;
+    padding: 24px 24px 44px 24px;
+    background-color: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+  }
+
+  .header__mobile-socials {
+    display: flex !important;
+    gap: 24px;
+  }
+
+  .header__mobile-socials a:hover {
+    opacity: 0.6;
+    transform: translateY(-2px);
+  }
+
+  .hero__container {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .hero__title {
+    font-size: 36px !important;
+    line-height: 48px !important;
+    font-weight: 700;
+  }
+
+  .hero__subtitle {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    font-weight: 500;
+    display: block !important;
+    white-space: normal !important;
+    text-overflow: clip !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    -webkit-line-clamp: unset !important;
+    line-clamp: unset !important;
+    -webkit-box-orient: unset !important;
+  }
+
+  .hero__subtitle br {
+    display: none !important;
+  }
+
+  .projects {
+    padding-top: 0px !important;
+  }
+
+  .projects__title {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .projects__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px !important;
+    padding-bottom: 44px !important;
+  }
+
+  .project-card__title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 600;
+  }
+
+  .project-card__desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 500;
+  }
+
+  .projects__subgrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .project-card--big .project-card__image-wrapper,
+  .project-card--small .project-card__image-wrapper {
+    height: 245.25px;
+    aspect-ratio: auto !important;
+  }
+
+  .footer {
+    padding: 44px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer__title {
+    font-family: var(--font-main) !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+    color: var(--text-main);
+  }
+
+  .footer__socials {
+    display: flex !important;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .footer__link {
+    width: auto !important;
+    height: auto !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  /* ------------------------------------------------------------------------
+     Адаптив страницы: ОБО МНЕ
+     ------------------------------------------------------------------------ */
+  .about-page {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+    gap: 0 !important;
+  }
+
+  .about-page__main-title {
+    font-size: 36px !important;
+    line-height: 48px !important;
+    font-weight: 700 !important;
+    margin-bottom: 40px !important;
+  }
+
+  .about-intro,
+  .about-stats,
+  .about-text-block {
+    margin-bottom: 32px !important;
+  }
+
+  .about-text-block:nth-last-of-type(2) {
+    margin-bottom: 32px !important;
+  }
+
+  .about-intro {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .about-intro__content h3 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
+  .about-intro__content p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .about-stats {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 0 !important;
+    background: none !important;
+    border-radius: 0 !important;
+    width: 100%;
+  }
+
+  .about-stats__item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 24px !important;
+    background: linear-gradient(90deg, rgba(254, 80, 124, 0.20) 0%, rgba(84, 185, 179, 0.20) 100%) !important;
+    border-radius: 24px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .about-stats__number {
+    font-size: 36px !important;
+    line-height: 48px !important;
+    text-align: center;
+  }
+
+  .about-stats__label {
+    text-align: center;
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+
+  .about-text-block h3 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
+  .about-text-block p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .about-gallery {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    margin-top: 0 !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     Адаптив страницы: РЕЗЮМЕ
+     ------------------------------------------------------------------------ */
+  .resume-page {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+  }
+
+  .resume-page__title {
+    font-size: 36px !important;
+    line-height: 48px !important;
+    font-weight: 700 !important;
+    margin-bottom: 44px !important;
+  }
+
+  .resume-content {
+    gap: 24px !important;
+  }
+
+  .resume-section {
+    gap: 24px !important;
+  }
+
+  .resume-section__title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+  }
+
+  .resume-list {
+    gap: 24px !important;
+  }
+
+  .resume-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .resume-item__date {
+    width: auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .resume-item__position {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+  }
+
+  .resume-item__desc {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .resume-item__desc ul {
+    padding-left: 20px !important;
+    gap: 2px !important;
+  }
+
+  .resume-item__desc li {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     Адаптив страницы: КЕЙС (глобальные правила для всех кейсов)
+     ------------------------------------------------------------------------ */
+  .case-hero {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+    gap: 24px !important;
+  }
+
+  .case-hero__top { gap: 16px !important; }
+  .case-hero__tags { gap: 8px !important; }
+  .case-tag {
+    font-size: 16px !important;
+    height: 32px !important;
+    padding: 0 12px !important;
+    border-radius: 16px !important;
+    line-height: 1 !important;
+  }
+  .case-tag--outline {
+    padding: 0 10px !important;
+  }
+  .case-hero__title {
+    font-size: 36px !important;
+    line-height: 48px !important;
+  }
+  .case-hero__subtitle {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    font-weight: 500 !important;
+  }
+  .case-hero__cover {
+    aspect-ratio: 327 / 245 !important;
+  }
+
+  .case-dark { padding: 44px 0 !important; }
+  .case-dark + .case-dark { padding-top: 0 !important; }
+  .case-section__title {
+    font-size: 36px !important;
+    line-height: 48px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .case-overview {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .case-overview__text {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .case-overview__text strong {
+    margin-top: 20px !important;
+  }
+
+  .case-workflow { gap: 40px !important; }
+  .case-workflow__item { gap: 16px !important; }
+  .case-workflow__caption {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .case-workflow__title {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    text-align: left !important;
+  }
+
+  /* Принудительный <br class="br-desktop"> — работает только на десктопе */
+  br.br-desktop {
+    display: none !important;
+  }
+
+  /* Сплит-блоки и текстовые колонки на мобилке → в столбик */
+  .case-workflow__item--split {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .case-workflow__text,
+  .case-workflow__text-cols > div {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .case-workflow__text-cols {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+   .case-reflection {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .case-reflection__col {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .case-other { padding: 44px 0 !important; }
+  .case-other__title {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* На мобилке скрываем картинку обзора — текст занимает всю ширину */
+  .case-overview__img {
+    display: none !important;
+  }
+
+  /* «Другие проекты» — в столбик на мобилке */
+  .case-other__grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* --- Картинки кейса на мобилке (режим Fit) --- */
+  .case-hero__cover,
+  .case-workflow__item {
+    aspect-ratio: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Все карточки workflow — строго по ширине контейнера */
+  .case-workflow__item,
+  .case-workflow__item--split {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .case-workflow__item--reverse {
+    flex-direction: column-reverse !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .case-workflow__item img,
+  .case-workflow__item--split img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    object-fit: contain !important;
+  }
+
+  /* Витрина кейса на мобилке — со скруглением */
+  .case-hero__cover img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    border-radius: 16px !important;
+  }
+
+  /* Картинки в дизайн-процессе — прямоугольные */
+  .case-workflow__item img {
+    border-radius: 0 !important;
+  }
+}

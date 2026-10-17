@@ -1,0 +1,328 @@
+{
+  "header": {
+    "logo": "Portfolio",
+    "nav_about": "About me",
+    "nav_resume": "Resume"
+  },
+  "home": {
+    "hero_title": "Hi,<br>I'm Stanislav",
+    "hero_subtitle": "I'm a product designer with over ten years of experience turning complex ideas<br>into intuitive services and applications. I use AI tools<br>to speed up concept generation, UX copywriting, and routine optimization.",
+    "projects_title": "Projects",
+    "case1_desc": "Data Analytics Tool",
+    "case2_desc": "Marketplace",
+    "case3_desc": "Cryptocurrency Mining Service",
+    "case4_desc": "Internal corporate system"
+  },
+  "cases_img": {
+    "case1": {
+      "desktop": "assets/cases/case-1-pulse/en/pulse-big-en.webp",
+      "mobile": "assets/cases/case-1-pulse/en/pulse-small-en.webp"
+    },
+    "case2": "assets/cases/case-2-wellmax/en/wellmax-en.webp",
+    "case3": "assets/cases/case-3-cryptouniverse/en/cryptouniverse-en.webp",
+    "case4": "assets/cases/case-4-alfa/en/alfa-en.webp",
+    "pulse": {
+      "cover": {
+        "desktop": "assets/cases/case-1-pulse/en/pulse-cover-en.webp",
+        "mobile":  "assets/cases/case-1-pulse/en/pulse-small-en.webp"
+      },
+      "img1":  "assets/cases/case-1-pulse/en/pulse1-en.webp",
+      "img2":  "assets/cases/case-1-pulse/en/pulse2-en.webp",
+      "img3":  "assets/cases/case-1-pulse/en/pulse3-en.webp",
+      "img4":  "assets/cases/case-1-pulse/en/pulse4-en.webp",
+      "img5":  "assets/cases/case-1-pulse/en/pulse5-en.webp",
+      "img6":  "assets/cases/case-1-pulse/en/pulse6-en.webp",
+      "img7":  "assets/cases/case-1-pulse/en/pulse7-en.webp",
+      "img8":  "assets/cases/case-1-pulse/en/pulse8-en.webp",
+      "img9":  "assets/cases/case-1-pulse/en/pulse9-en.webp",
+      "img10": "assets/cases/case-1-pulse/en/pulse10-en.webp",
+      "img11": "assets/cases/case-1-pulse/en/pulse11-en.webp",
+      "img12": "assets/cases/case-1-pulse/en/pulse12-en.webp"
+    },
+    "wellmax": {
+      "cover": {
+        "desktop": "assets/cases/case-2-wellmax/en/wellmax-cover-en.webp",
+        "mobile":  "assets/cases/case-2-wellmax/en/wellmax-en.webp"
+      },
+      "img1":  "assets/cases/case-2-wellmax/en/wellmax1-en.webp",
+      "img2":  "assets/cases/case-2-wellmax/en/wellmax2-en.webp",
+      "img3":  "assets/cases/case-2-wellmax/en/wellmax3-en.webp",
+      "img4":  "assets/cases/case-2-wellmax/en/wellmax4-en.webp",
+      "img5":  "assets/cases/case-2-wellmax/en/wellmax5-en.webp",
+      "img6":  "assets/cases/case-2-wellmax/en/wellmax6-en.webp",
+      "img7":  "assets/cases/case-2-wellmax/en/wellmax7-en.webp",
+      "img8":  "assets/cases/case-2-wellmax/en/wellmax8-en.webp",
+      "img9":  "assets/cases/case-2-wellmax/en/wellmax9-en.webp",
+      "img10": "assets/cases/case-2-wellmax/en/wellmax10-en.webp",
+      "img11": "assets/cases/case-2-wellmax/en/wellmax11-en.webp"
+    },
+    "cryptouniverse": {
+      "cover": {
+        "desktop": "assets/cases/case-3-cryptouniverse/en/cryptouniverse-cover-en.webp",
+        "mobile":  "assets/cases/case-3-cryptouniverse/en/cryptouniverse-en.webp"
+      },
+      "img1": "assets/cases/case-3-cryptouniverse/en/cryptouniverse1-en.webp",
+      "img2": "assets/cases/case-3-cryptouniverse/en/cryptouniverse2-en.webp",
+      "img3": "assets/cases/case-3-cryptouniverse/en/cryptouniverse3-en.webp",
+      "img4": "assets/cases/case-3-cryptouniverse/en/cryptouniverse4-en.webp",
+      "img5": "assets/cases/case-3-cryptouniverse/en/cryptouniverse5-en.webp",
+      "img6": "assets/cases/case-3-cryptouniverse/en/cryptouniverse6-en.webp"
+    },
+    "alfa": {
+      "cover": {
+        "desktop": "assets/cases/case-4-alfa/en/alfa-cover-en.webp",
+       "mobile":  "assets/cases/case-4-alfa/en/alfa-en.webp"
+      },
+      "img1": "assets/cases/case-4-alfa/en/alfa1-en.webp",
+      "img2": "assets/cases/case-4-alfa/en/alfa2-en.webp",
+      "img3": "assets/cases/case-4-alfa/en/alfa3-en.webp",
+      "img4": "assets/cases/case-4-alfa/en/alfa4-en.webp",
+      "img5": "assets/cases/case-4-alfa/en/alfa5-en.webp",
+      "img6": "assets/cases/case-4-alfa/en/alfa6-en.webp",
+      "img7": "assets/cases/case-4-alfa/en/alfa7-en.webp",
+      "img8": "assets/cases/case-4-alfa/en/alfa8-en.webp",
+      "img9": "assets/cases/case-4-alfa/en/alfa9-en.webp"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "intro_title": "Let's get acquainted!<br>I'm Stanislav Shusharin",
+    "intro_desc": "And I design B2C and B2B user interfaces for complex, high-load web and mobile applications (for iOS and Android), as well as websites. I have experience working both in startups as the sole designer and in large companies as part of design teams.",
+    "stat1_num": "10+",
+    "stat1_label": "years of experience as a designer",
+    "stat2_num": "5",
+    "stat2_label": "industries (Big Data, Blockchain, <br>E-Commerce, EdTech, Enterprise)",
+    "stat3_num": "7",
+    "stat3_label": "products launched from scratch",
+    "stat4_num": "50+",
+    "stat4_label": "user research studies conducted",
+    "stat5_num": "1",
+    "stat5_label": "article on Habr",
+    "expertise_title": "Expertise & Leadership",
+    "expertise_desc": "At this stage of my career, I am looking for Senior / Staff Product Designer roles with a growth trajectory toward either an IC (Individual Contributor) track or a Team Lead position. I bring a unique background that allows me to effectively meet both organizational needs: my academic background as a Ph.D. holder and former university lecturer has equipped me with a highly systemic mindset and strong mentorship skills, while my formal education in counseling psychology provides me with high emotional intelligence (EQ). I successfully leverage these strengths to mentor colleagues, deliver workshops, write tech articles (e.g., Habr), conduct deep user research, and foster a healthy, collaborative environment within cross-functional teams.<br><br>My practical experience spans the full product development lifecycle – from independently driving UX research to scaling design systems. I take ownership of hiring, onboarding, and establishing Design QA processes, and I always present and defend design solutions to stakeholders using data-driven arguments. I am looking to join a mature product team where I can solve complex infrastructure challenges.",
+    "hobbies_title": "My interests and hobbies",
+    "hobbies_desc": "In my free time, I go to museums and theaters, and watch arthouse cinema and sci-fi. I'm interested in psychology (I studied to become a psychologist to better understand users), philosophy (I hold a PhD in philosophy), and learning foreign languages (I have a degree in translation). I do ceramics, watercolor painting, and photography. I'm into hiking, yoga, and running. I love reading, learning new things, and traveling."
+  },
+  "resume": {
+    "title": "Resume",
+    "experience_title": "Work Experience",
+    "exp1_date": "2023 — 2025",
+    "exp1_pos": "Innotech (T1 holding), Product Designer",
+    "exp1_desc": "<ul><li>Designed the visual and logical architecture of 3 products on the Sfera platform: Sfera.Pulse (reporting dashboards), Sfera.Tasks (task manager), Sfera.Code (Git tool).</li><li>Conducted 50+ qualitative and quantitative user studies together with business analysts and UX researchers.</li><li>Created 18 CJMs.</li><li>Developed and documented 2 patterns for the platform's shared library (empty states and widgets).</li><li>Spoke at 5 internal events.</li><li>Mentored 2 junior designers.</li></ul>",
+    "exp2_date": "2019 — 2022",
+    "exp2_pos": "GridGain Systems, Product Designer",
+    "exp2_desc": "<ul><li>Worked on the design of the company's flagship product (a B2B SaaS in-memory computing platform) and delivered 250+ screens and 9+ new sections.</li><li>Optimized the workflow by running usability and hallway tests as well as design reviews.</li><li>Together with the HR team, built a careers website with job descriptions.</li><li>Wrote an article for the company blog on Habr about the evolution of design components.</li><li>Interviewed 20+ designers and front-end developers.</li></ul>",
+    "exp3_date": "2018 — 2019",
+    "exp3_pos": "Eurasian Financial Union, Mobile App Designer",
+    "exp3_desc": "<ul><li>Designed the mobile app for the WellMax marketplace (iOS and Android).</li><li>Created 6 personas, 6 CJMs, and the information architecture.</li><li>Ran usability, A/B, and hallway tests.</li><li>Prepared design artifacts for publishing the app on Google Play and the App Store.</li><li>Produced 3 promo videos with UI animation for social media.</li></ul>",
+    "exp4_date": "2018",
+    "exp4_pos": "CRYPTOUNIVERSE, Interface Designer",
+    "exp4_desc": "<ul><li>Designed web pages for 3 landing pages and the company's web portal.</li><li>Designed a mobile app for a mining hotel (iOS and Android).</li><li>Estimated the potential of new features based on metrics.</li></ul>",
+    "exp5_date": "2017 — 2018",
+    "exp5_pos": "Estelab, Lead Designer",
+    "exp5_desc": "<ul><li>Created design layouts for print, social media, and the company's websites and online stores. Drew graphics, logos, and other visual assets for commercial presentations and product packaging (creams, etc.).</li><li>Participated in developing key visuals, photographed equipment, products, and employees, and performed professional retouching.</li><li>Cooperated with print houses.</li></ul>",
+    "exp6_date": "2016 — 2017",
+    "exp6_pos": "PBN Hill+Knowlton Strategies, Creative Designer",
+    "exp6_desc": "<ul><li>Worked with managers and representatives of major Russian and international companies (Procter &amp; Gamble, Kinross, Castorama, Bacardi, Alcatel, MegaFon, Johnson &amp; Johnson, Visa, Holiday Inn, BD, etc.) to create marketing materials and commercial presentations for product launches and events (business cards, banners, invitations, posters, booklets, brochures, etc.).</li><li>Cooperated with print houses, selecting materials and controlling the quality of the produced items.</li></ul>",
+    "exp7_date": "2015 — 2016",
+    "exp7_pos": "«Akademiya» Publishing Center, Interface Designer",
+    "exp7_desc": "Created icons and design layouts for interactive exercise templates and screens of an educational web app, and designed the web pages of the promo site.",
+    "exp8_date": "2012 — 2015",
+    "exp8_pos": "ARVD, Graphic Designer",
+    "exp8_desc": "<ul><li>Created and prepared print-ready design layouts for exhibition events (business cards, catalogs, banners, etc.).</li><li>Cooperated with copywriters, photographers, installers, and print houses.</li></ul>",
+    "education_title": "Education",
+    "edu1_date": "2025",
+    "edu1_univ": "East European Institute of Psychoanalysis",
+    "edu1_degree": "Counseling Psychologist (retraining)",
+    "edu2_date": "2014",
+    "edu2_univ": "Omsk State Technical University",
+    "edu2_degree": "Philosophical Anthropology, Philosophy of Culture (PhD)",
+    "edu3_date": "2012",
+    "edu3_univ": "Omsk State Technical University",
+    "edu3_degree": "Translator in Professional Communication (Higher Education)",
+    "edu4_date": "2012",
+    "edu4_univ": "Omsk State Technical University",
+    "edu4_degree": "Advertising Specialist (Higher Education)",
+    "courses_title": "Courses",
+    "course1_date": "2019 — 2021",
+    "course1_name": "The Interaction Design Foundation",
+    "course1_desc": "30+ UX/UI design courses",
+    "certificates_title": "Certificates",
+    "cert1_date": "2017",
+    "cert1_name": "Cambridge Advanced (C1)"
+  },
+  "footer": {
+    "cta": "Let's work together =)"
+  },
+  "case_pulse": {
+    "tag_type": "Case Study",
+    "tag_industry": "Big Data",
+    "tag_platform": "Web",
+    "title": "Data analytics tool",
+    "subtitle": "in real time",
+
+    "overview_title": "Overview",
+    "ov_context_label": "Context",
+    "ov_context_text": "Sfera.Pulse is a real-time reporting and analytics tool within the Sfera platform.",
+    "ov_problem_label": "Problem",
+    "ov_problem_text": "Executives and project managers often need real-time data monitoring.",
+    "ov_goal_label": "Goal",
+    "ov_goal_text": "To design a tool for data monitoring.",
+    "ov_result_label": "Result",
+    "ov_result_text": "A tool was developed that allows users to create dashboards with widgets for various tasks based on defined metrics. The tool was integrated into the core applications of the Sfera platform and received positive feedback.",
+    "ov_contribution_label": "Contribution to the team",
+    "ov_contribution_text": "Conducted research, developed use cases for different roles, participated in discussing a set of predefined widgets, and prepared prototypes and final mockups.",
+    "ov_methods_label": "Research methods used",
+    "ov_methods_text": "In-depth interviews, competitive analysis of BI tools, CJM, usability testing of prototypes.",
+
+    "workflow_title": "Workflow",
+    "wf1_caption": "The work began with conducting interviews with real users (leads, product managers, scrum masters, etc.), building CJMs and personas based on them, as well as a competitive analysis of existing BI tools.",
+    "wf2_caption": "Based on the collected data, the first version of the information architecture was developed, and flows with the main user scenarios were created.",
+    "wf3_caption": "These included scenarios such as navigating to the app from other Sfera platform services, adding empty dashboards and predefined templates, adding widgets, configuring them, refreshing, deleting, and others.",
+    "wf4_caption": "Each scenario accounted for both the successful path and possible errors that could occur (data failed to load, fields were left empty, etc.), as well as empty screen states.",
+    "wf5_caption": "When building the mockups, components from the design system and patterns common to all Sfera platform web apps were used.",
+    "wf6_caption": "I also created new components, which then went through an approval process with design leads and the design system team. They were subsequently added to the shared design library of the Sfera platform.",
+    "wf7_caption": "The first widgets were: task filter, task distribution, and sprint burndown.",
+    "wf8_caption": "For each widget, I assembled components with variants accounting for different states (default, hover, data loading error, loading data, etc.) and sizes.",
+    "wf9_caption": "I also described a common widget pattern and the principles for scaling and arranging widgets on the dashboard.",
+    "wf_metrics_title": "Work with key service metrics",
+    "wf_metrics_caption": "These metrics were collected to measure not only usability but also client loyalty and satisfaction in order to assess the prospects for contract renewal.",
+    "wf_further_caption": "Further work on the project involved creating new widgets (for example, a Gantt chart) and builders that help users assemble their own widgets from ready-made components.",
+
+    "reflection_title": "Reflection",
+    "reflection_col1": "The project became a challenge for me. It was my first time working as a product designer in a huge company with several design teams, UX writers, and UX researchers. There was even a separate team that dealt only with the design system.<br><br>Before that, I had worked in startups and small companies, so some meetings were new to me. For example, design jams or design demos. But the main discovery for me was the contrast in how processes are organized between a startup and a large company. When you're on your own, there are fewer approvals, and you handle all areas yourself. In a large company, however, there are many reviews, and sometimes you have to wait weeks for new components or patterns. But in return, you get training sessions, case breakdowns, and experience sharing with strong colleagues.<br><br>On the project, I was the only designer. And, as before, I was responsible for the entire design cycle: conducted competitive analysis, built CJMs and personas for different roles, organized usability research, drew the main scenarios, created complex components with many variants, and described new patterns. The significant difference was only the number of approvals for the final mockups and the opportunity to conduct research together with UX researchers.",
+    "reflection_col2": "I realized that in such conditions, communication becomes no less important a design tool: I constantly had to negotiate deadlines with colleagues, document these agreements in writing, and use research data as an argument in meetings to approve next steps.<br><br>Ultimately, I managed to design the key scenarios and widgets, establish patterns for scaling the product, and create a foundation for future decisions. And the main skill was the ability to combine the flexibility of startup thinking with the systematic approach of a mature design organization, without losing product focus and empathy for the user.",
+
+    "other_title": "Other projects"
+  },
+  "case_wellmax": {
+    "tag_type": "Case Study",
+    "tag_industry": "E-Commerce",
+    "tag_platform": "Mobile",
+    "title": "Mobile app<br>for a marketplace",
+    "subtitle": "for Android and iOS",
+
+    "overview_title": "Overview",
+    "ov_context_label": "Context",
+    "ov_context_text": "Wellmax is an e-commerce platform that connects customers and retail partners.",
+    "ov_problem_label": "Problem",
+    "ov_problem_text": "Only the web version of the marketplace existed.",
+    "ov_goal_label": "Goal",
+    "ov_goal_text": "Design a mobile app for Android and iOS.",
+    "ov_result_label": "Results",
+    "ov_result_text": "The required design artifacts and mockups were produced on time and handed off to the developers. Feedback from the company's leadership and customers was positive.",
+    "ov_contribution_label": "Contribution to the team",
+    "ov_contribution_text": "Conducted user research, produced the necessary design artifacts, and created prototypes and final mockups of the mobile app.",
+    "ov_methods_label": "Research methods used",
+    "ov_methods_text": "In-depth interviews, surveys, card sorting, analysis of app store reviews, customer feedback, usability testing, and work with analytics data.",
+
+    "workflow_title": "Workflow",
+
+    "wf1_text": "<p>In this project, I had to solve <strong>the following tasks:</strong></p><ol><li>Collect business requirements.</li><li>Run a competitive analysis.</li><li>Define the value the app should deliver.</li><li>Work out the user portrait.</li><li>Develop the necessary artifacts.</li><li>Create prototypes and mockups.</li><li>Evaluate the finished solution.</li></ol><p><strong>Collecting business requirements</strong><br>The marketers wanted a mobile app that initially included only the basic functionality needed to make purchases. Later, a section for the loyalty program was to be added. Development was planned to start with the Android app, with the iOS version to follow.</p><p><strong>Competitive analysis</strong><br>Finding competitors and analyzing them from both a marketing strategy and a design standpoint helped assess the current offerings in this area.</p>",
+
+    "wf2_col1": "<p><strong>In-depth interviews and surveys</strong><br>To better understand user needs and define the potential value of the app being designed, I ran in-depth interviews with 7 clients of the company who had used the web version of the marketplace.</p><p>Based on the answers, I formulated the questions for an online survey, which was sent out via email. More than 50 people responded within a day.</p><p><strong>Online survey questions:</strong></p><ol><li>How did you learn about Wellmax?</li><li>Why did you decide to make a purchase on the marketplace?</li><li>Tell me about the online shopping services you use on your phone.</li><li>What tasks do you solve with them?</li><li>How often do you use them?</li><li>Give examples of situations in the past week when you used them.</li><li>What do you expect from the Wellmax mobile app?</li><li>Is there anything else you'd like to share?</li></ol>",
+
+    "wf2_col2": "<p><strong>The research findings</strong> turned out to be quite unexpected. Users mostly came to the marketplace on the recommendation of friends and acquaintances. They were usually interested only in promotional offers. And in the mobile app being designed, they expected to see the loyalty program functionality they already knew from the website.</p><p><strong>User personas</strong><br>Based on the collected data, I identified 6 persona groups. They are shown below.</p><p><strong>User stories</strong><br>I started writing them to better understand the audience. Example: as a shopper, I want to try on clothes before paying so that I can be sure of the quality of the item I'm buying.</p><p><strong>Job stories</strong><br>These are needed for designing functionality. Example: when I buy an item, I want to see reviews from other shoppers so that I can be sure the ordered item matches the stated characteristics.</p>",
+
+    "wf3_title": "User persona groups",
+
+    "wf5_text": "<p><strong>Information architecture</strong><br>Based on the content planned for the app, as well as the competitive analysis and the card sorting sessions run with potential users, I developed the information architecture of the mobile app. A simplified version is shown below.</p><p><strong>Final mockups</strong><br>Once the prototypes had been approved, the UI Kit fully assembled, and the empty-state illustrations drawn, I moved on to the final mockups. First all screens were designed for Android, and later adapted for the iOS version, taking into account all platform specifics.</p><p><strong>Prototypes and usability testing</strong><br>Based on the user scenarios, I built interactive prototypes and ran moderated usability testing with real users. We were looking for barriers in the purchase and checkout flows. Based on the test results, I revised the final mockups and handed them off to development.</p>",
+
+    "wf6_title": "Information architecture",
+
+    "wf7_caption":  "I first designed the screens for the Android version (1), and then adapted them for iOS (2).",
+    "wf8_caption":  "The flows with the main user scenarios included registration and sign-in, profile editing, a catalog with product cards, a cart, and the loyalty program with cashback.",
+    "wf9_caption":  "I drew all the empty-state illustrations myself, following the principles of emotional design.",
+    "wf10_caption": "When the MVP versions of the marketplace were ready, I prepared the necessary images and app icons for publishing in Google Play and the App Store. I also put together a short showreel for YouTube.",
+
+    "wf_metrics_title":   "Working with the key metrics of the mobile app",
+    "wf_metrics_caption": "In the early stages of app development, only high-level metrics and key funnel conversions were tracked.",
+
+    "reflection_title": "Reflection",
+    "reflection_col1": "Working on this app taught me that the speed and quality of design depend directly on how deep the upfront preparation is.<br><br>After gathering business requirements, running a competitive analysis, and researching the product's value through in-depth interviews and surveys, I had a clear picture in my head of why the user opens the app and what task they solve. That let me design screens much faster and more consciously later on, without going back to rethink the basic logic at every step.<br><br><b>A separate insight</b> was how strongly user-portrait work influences design decisions. When there is a specific person with a specific need behind every screen, it is much easier to argue for one decision or another and to drop the unnecessary. I realized that I need to keep in mind not only the visuals, but also usability and solving user problems.",
+    "reflection_col2": "I also became convinced that iteration is a very good working tool. Each stage of design (from wireframes and empty-state illustrations to prototypes and, finally, to the mockups with usability testing) refined the previous one and reduced the risk of mistakes at release.<br><br>In the end, I learned to structure the process so that research and design work together, rather than existing separately from each other.",
+
+    "other_title": "Other projects"
+  },
+  "case_cryptouniverse": {
+    "tag_type": "Case Study",
+    "tag_industry": "Blockchain",
+    "tag_platform": "Web",
+    "tag_device": "Mobile",
+    "title": "Cryptocurrency mining service:",
+    "subtitle": "mobile apps and websites",
+
+    "overview_title": "Overview",
+    "ov_context_label": "Context",
+    "ov_context_text": "CryptoUniverse develops cryptocurrency projects: equipment, mining hotel, cloud mining services.",
+    "ov_problem_label": "Problem",
+    "ov_problem_text": "The company had just launched. There were no websites or mobile apps. Users didn't understand whether their miners would pay off, or how much they would earn.",
+    "ov_goal_label": "Goal",
+    "ov_goal_text": "To design from scratch landing pages and the portal, as well as mobile apps (iOS and Android). To evaluate the potential of a new feature — a payback calculator.",
+    "ov_result_label": "Results",
+    "ov_result_text": "Designs for websites and mobile apps were created (Android and iOS). The potential of the payback calculator was evaluated: range [0.1 ; 2.8] requests per day.",
+    "ov_contribution_label": "Contribution to the team",
+    "ov_contribution_text": "Conducted research, created wireframes, prototypes, and final mockups, evaluated the potential of the new feature.",
+    "ov_methods_label": "Research methods used",
+    "ov_methods_text": "Product analytics analysis, support ticket analysis, in-depth interviews, benchmarking, CJM.",
+
+    "workflow_title": "Workflow",
+
+    "wf1_text": "<p>I began the project by gathering requirements and conducting in-depth interviews. Based on them, I wrote user stories and developed the information architecture for the websites and apps. Then I moved on to wireframes. Once they were approved, I started searching for a visual concept.</p><p>Cryptocurrency mining was perceived as a technology of the future. Neon colors perfectly conveyed that feeling, and space imagery became a metaphor for scale and potential.</p><p>I drew the final mockups and handed them off to developers. Design reviews and usability testing of the implemented solutions helped introduce necessary corrections to the mockups.</p><p>But one important question remained: <strong>how to help users decide whether to place their miners in the mining hotel?</strong> That's how the idea for a new feature emerged — a payback calculator.</p><p>Initially, it was planned to be placed only on the mining hotel website, and later to add a CTA to call it from the equipment section in the personal account and mobile app.</p>",
+
+    "wf2_title": "Payback calculator for a miner<br class=\"br-desktop\">at a mining hotel",
+
+    "wf2_col1": "<p><strong>Product context</strong><br>A mining hotel is a facility where users place their equipment (or rent it).</p><p>For it, I designed a website with a personal account and a mobile app with the following sections:</p><ul><li><strong>Dashboard</strong> — mining charts.</li><li><strong>Payouts</strong> — earnings and withdrawals.</li><li><strong>Equipment</strong> — a table with the characteristics of connected devices.</li><li><strong>Settings.</strong></li><li><strong>Profile.</strong></li></ul><p>Mining hotel clients are people who already own a miner or are considering buying one. They come to the mining hotel so they don't have to maintain the miners themselves.</p>",
+
+    "wf2_col2": "<p><strong>Problem</strong><br>Users didn't understand whether their miners would pay off at the hotel, or how much they would earn. This made them postpone the decision. This was confirmed by drop-offs on the pricing page, frequent support questions like \"How much will this miner model earn?\", and customer comments in interviews like \"I don't know if it will pay off\".</p><p>We needed to design a feature that would answer the user's question before they even asked it. A payback calculator could be that feature.</p><p><strong>Goal</strong><br>To evaluate the potential of the new feature and decide whether to launch it. To do this: formulate a hypothesis and a validation plan, build a user journey model, and evaluate conversions at each step using benchmarks and real analytics data.</p>",
+
+    "wf3_text": "<p><strong>Product hypothesis</strong><br>I started by formulating the hypothesis: \"If we add a payback calculator section to the mining hotel website, users will more often proceed to the connection request, because they'll get an answer to the question 'How much will I earn?'\"</p><p><strong>Hypothesis metrics to track:</strong> conversion from using the miner payback calculator to booking requests for the mining hotel.</p><p><strong>What counts as success at launch:</strong> a +15% increase in request conversion vs. control.</p><p>Next, I built a user journey model (funnel and its corresponding chain of conversions). After that, I evaluated the conversion of each step using benchmarks and real analytics data.</p><p>I also sketched a wireframe of the new section to understand how the calculator should work (pre-filled fields, sliders, etc.).</p>",
+
+    "wf4_title": "User journey model",
+
+    "wf5_caption": "The new section with the miner payback calculator was placed between the pricing and reviews sections: the user has already seen the price and is now wondering 'Will it pay off?'",
+
+    "wf6_title": "Assumptions for the calculation",
+
+    "wf6_text": "<p><strong>Calculation</strong><br>Base scenario: 2000 × 45% × 35% × 12% × 30% ≈ 1.1 requests/day<br>Optimistic scenario: 2000 × 55% × 45% × 18% × 35% ≈ 2.8 requests/day<br>Pessimistic scenario: 2000 × 30% × 20% × 6% × 20% ≈ 0.14 requests/day<br><strong>Range: [0.1 ; 2.8] requests per day. The feature pays off.</strong></p><p><strong>Confidence intervals</strong><br>The main uncertainty lies in two steps:</p><ul><li>Scroll depth to the block (45%). Key risk: the calculator section is located between pricing and reviews, and everything depends on whether the user reaches it. Range: [30% ; 55%] at 95% confidence level.</li><li>Interaction with the calculator (35%). Key risk: the user sees the result but doesn't touch the sliders. Range: [20% ; 45%] at 95% confidence level.</li></ul><p>The remaining steps rely on stable benchmarks. Additional hypothesis testing is also possible.</p>",
+
+    "wf7_col1": "<p><strong>Ways to further validate the hypothesis</strong></p><ul><li>A/B test (three groups: no calculator / with auto-calculation and sliders / with auto-calculation without sliders; primary metric for the study — conversion to request; secondary — share of users who interacted, CTR of \"Book a spot\").</li><li>Qualitative methods: session recordings (interaction with sliders), mini-survey after interaction (\"Is it clear how your miner will pay off?\" (1–5 score), in-depth interviews (Do you trust the pre-filled calculation? Is it clear where the numbers come from? What stops you from clicking \"Book a spot\"? Is one button enough?), analysis of support ticket volume (decreased / new questions appeared).</li><li>Long-term metrics: retention at 30 and 90 days (three groups: didn't see calculator / saw result / interacted with sliders), LTV (long-term, share of users who bought a second miner among those who interacted with the calculator), churn at 3 months (when showing a range — base/pessimistic/optimistic calculation — rather than a single number).</li></ul>",
+
+    "wf7_col2": "<p>Additional: one button / two buttons (two buttons give +33% to conversion, a \"Save calculation\" button), one number / a range in the calculation (showing three calculation scenarios reduces the risk of disappointment; we test in an A/B test: does it affect the CTR of \"Book a spot\" and churn).</p><p>The main risk of the new feature is passive viewing: the user sees the result and leaves without interacting. Therefore, the key metric is the share of users who interacted with the calculator. If it's below 20%, the feature works as a showcase.</p><p><strong>Reflection</strong><br>When I first started working on websites and apps, it seemed to me that the main thing was a quality visual and a convenient interface. But later I realized: even the most beautiful and convenient feature has no value if it doesn't solve a real user problem and doesn't affect business metrics. Thanks to this project, I understood that a product is a system of interconnected elements, which can be understood through both design and analytics.</p>",
+
+    "other_title": "Other projects"
+  },
+  "case_alfa": {
+    "tag_type": "Case Study",
+    "tag_industry": "Enterprise",
+    "tag_platform": "Web",
+    "title": "Meeting room booking flow",
+    "subtitle": "for an internal corporate system",
+
+    "overview_title": "Overview",
+    "ov_context_label": "Context",
+    "ov_context_text": "The internal corporate system is a web application for employees that unifies various services (vacation booking, certificate requests, etc.) designed to simplify daily tasks. A meeting room booking module needed to be added.",
+    "ov_problem_label": "Problem",
+    "ov_problem_text": "The lack of a unified booking flow forces employees to spend a significant amount of working time checking the availability of meeting rooms and their equipment.",
+    "ov_goal_label": "Goal",
+    "ov_goal_text": "To design an intuitive meeting room booking flow.",
+    "ov_result_label": "Result",
+    "ov_result_text": "The interface was designed. Feedback received from employees was positive.",
+    "ov_contribution_label": "Contribution to the team",
+    "ov_contribution_text": "Conducted research, prepared prototypes and final mockups.",
+    "ov_methods_label": "Research methods used",
+    "ov_methods_text": "Employee interviews, competitive analysis, usability testing of the prototype.",
+
+    "workflow_title": "Workflow",
+    "wf1_caption": "The main booking screen is divided into two parts: the upper section (with a search form) and the lower section (cards with photos and meeting room details). After booking, the event appears in the calendar.",
+    "wf2_caption": "When selecting an office, a separate page with a map opens. There, the user can see office opening hours, as well as the types and number of meeting rooms in each.",
+    "wf3_caption": "Once the user finds a suitable office, they land on the main booking screen. Filters (floor, type, date, time, equipment) help narrow down the search results for meeting rooms.",
+    "wf4_caption": "This screen shows the interface for the case where none of the existing meeting rooms match the user's request.",
+    "wf5_caption": "Clicking the booking button opens a dialog box where you can add the meeting title and participants. There are also options for setting up meeting recurrence and sending invitations.",
+    "wf6_caption": "When adding a guest in the booking form, additional fields appear that must be filled in to send an invitation to the guest and to order a pass for them.",
+    "wf7_caption": "After booking, the user sees a confirmation dialog box. At this same step, guest passes can be requested (after clicking the button, feedback appears in the form of a snackbar).",
+    "wf8_caption": "<strong>Reflection</strong><br>I realized that complex corporate systems benefit from simple, predictable scenarios.",
+
+    "other_title": "Other projects"
+  }
+}

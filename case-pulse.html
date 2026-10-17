@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sfera.Pulse | Stanislav Shusharin</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/ui/favicon/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="assets/ui/favicon/favicon.ico">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo">
+        <img src="assets/ui/icons/logo.svg" alt="Логотип" class="logo-svg">
+        <span class="header__logo-text h6" data-lng="header.logo">Портфолио</span>
+      </a>
+      <button class="header__burger" id="burger-toggle" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="header-nav">
+        <div class="header__menu">
+          <a href="about.html" class="header__link body-1" data-lng="header.nav_about">Обо мне</a>
+          <a href="resume.html" class="header__link body-1" data-lng="header.nav_resume">Резюме</a>
+        </div>
+        <div class="header__nav-bottom">
+          <div class="header__mobile-socials">
+            <a href="mailto:stanislav.shusharin@gmail.com" class="footer__link"><img src="assets/ui/icons/email.svg" alt="Email" class="footer__icon"></a>
+            <a href="https://ru.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener"><img src="assets/ui/icons/linkedin.svg" alt="LinkedIn" class="footer__icon"></a>
+            <a href="https://t.me/Stan_supreme" class="footer__link" target="_blank" rel="noopener"><img src="assets/ui/icons/telegram.svg" alt="Telegram" class="footer__icon"></a>
+          </div>
+          <div class="lang-switcher-container">
+            <button class="lang-btn" data-lang-set="en">EN</button>
+            <button class="lang-btn lang-btn--active" data-lang-set="ru">RU</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section class="case-hero">
+      <div class="container">
+        <div class="case-hero__top gsap-fade">
+          <div class="case-hero__tags">
+            <span class="case-tag case-tag--filled" data-lng="case_pulse.tag_type">Кейс-стади</span>
+            <span class="case-tag case-tag--outline" data-lng="case_pulse.tag_industry">Big Data</span>
+            <span class="case-tag case-tag--outline" data-lng="case_pulse.tag_platform">Web</span>
+          </div>
+          <div class="case-hero__title-block">
+            <h1 class="case-hero__title" data-lng="case_pulse.title">Инструмент аналитики данных</h1>
+            <p class="case-hero__subtitle" data-lng="case_pulse.subtitle">в режиме реального времени</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="case-hero__cover gsap-fade">
+          <img src="assets/cases/case-1-pulse/ru/pulse-cover.webp"
+               alt="Sfera.Pulse"
+               data-lng="cases_img.pulse.cover"
+               data-responsive="case">
+        </div>
+      </div>
+    </section>
+
+    <!-- ОБЗОР -->
+    <section class="case-dark">
+      <div class="container">
+        <h2 class="case-section__title gsap-project" data-lng="case_pulse.overview_title">Обзор</h2>
+        <div class="case-overview gsap-project">
+          <div class="case-overview__text">
+            <strong data-lng="case_pulse.ov_context_label">Контекст</strong>
+            <p data-lng="case_pulse.ov_context_text"></p>
+            <strong data-lng="case_pulse.ov_problem_label">Проблема</strong>
+            <p data-lng="case_pulse.ov_problem_text"></p>
+            <strong data-lng="case_pulse.ov_goal_label">Цель</strong>
+            <p data-lng="case_pulse.ov_goal_text"></p>
+            <strong data-lng="case_pulse.ov_result_label">Результат</strong>
+            <p data-lng="case_pulse.ov_result_text"></p>
+            <strong data-lng="case_pulse.ov_contribution_label">Вклад в команду</strong>
+            <p data-lng="case_pulse.ov_contribution_text"></p>
+            <strong data-lng="case_pulse.ov_methods_label">Использованные методы исследования</strong>
+            <p data-lng="case_pulse.ov_methods_text"></p>
+          </div>
+          <img class="case-overview__img" src="assets/cases/case-1-pulse/ru/pulse1.webp" alt="Overview" data-lng="cases_img.pulse.img1">
+        </div>
+      </div>
+    </section>
+
+    <!-- ДИЗАЙН-ПРОЦЕСС -->
+    <section class="case-dark">
+      <div class="container">
+        <h2 class="case-section__title gsap-project" data-lng="case_pulse.workflow_title">Дизайн-процесс</h2>
+        <div class="case-workflow">
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse2.webp" alt="" data-lng="cases_img.pulse.img2">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf1_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse3.webp" alt="" data-lng="cases_img.pulse.img3">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf2_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse4.webp" alt="" data-lng="cases_img.pulse.img4">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf3_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse5.webp" alt="" data-lng="cases_img.pulse.img5">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf4_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse6.webp" alt="" data-lng="cases_img.pulse.img6">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf5_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse7.webp" alt="" data-lng="cases_img.pulse.img7">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf6_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse8.webp" alt="" data-lng="cases_img.pulse.img8">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf7_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse9.webp" alt="" data-lng="cases_img.pulse.img9">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf8_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse10.webp" alt="" data-lng="cases_img.pulse.img10">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf9_caption"></p>
+          </div>
+
+          <div class="case-workflow__item case-workflow__item--metrics gsap-project">
+            <h3 class="case-workflow__title" data-lng="case_pulse.wf_metrics_title">Работа с ключевыми метриками сервиса</h3>
+            <img src="assets/cases/case-1-pulse/ru/pulse11.webp" alt="" data-lng="cases_img.pulse.img11">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf_metrics_caption"></p>
+          </div>
+
+          <div class="case-workflow__item gsap-project">
+            <img src="assets/cases/case-1-pulse/ru/pulse12.webp" alt="" data-lng="cases_img.pulse.img12">
+            <p class="case-workflow__caption" data-lng="case_pulse.wf_further_caption"></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- РЕФЛЕКСИЯ -->
+    <section class="case-dark">
+      <div class="container">
+        <div class="case-reflection">
+          <div class="case-reflection__col gsap-project">
+            <strong data-lng="case_pulse.reflection_title">Рефлексия</strong>
+            <p data-lng="case_pulse.reflection_col1"></p>
+          </div>
+          <div class="case-reflection__col gsap-project">
+            <p data-lng="case_pulse.reflection_col2"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ДРУГИЕ ПРОЕКТЫ -->
+    <section class="case-other">
+      <div class="container">
+        <h2 class="case-other__title gsap-project" data-lng="case_pulse.other_title">Другие проекты</h2>
+        <div class="case-other__grid">
+
+          <article class="project-card project-card--small gsap-project">
+            <a href="case-wellmax.html" class="project-card__link">
+              <div class="project-card__image-wrapper">
+                <img src="assets/cases/case-2-wellmax/ru/wellmax.webp" alt="WellMax" class="project-card__image" data-lng="cases_img.case2">
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title h5">WellMax</h3>
+                <p class="project-card__desc body-3" data-lng="home.case2_desc">Маркетплейс</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card project-card--small gsap-project">
+            <a href="case-cryptouniverse.html" class="project-card__link">
+              <div class="project-card__image-wrapper">
+                <img src="assets/cases/case-3-cryptouniverse/ru/cryptouniverse.webp" alt="CryptoUniverse" class="project-card__image" data-lng="cases_img.case3">
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title h5">CryptoUniverse</h3>
+                <p class="project-card__desc body-3" data-lng="home.case3_desc">Сервис майнинга криптовалют</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card project-card--small gsap-project">
+            <a href="case-alfa.html" class="project-card__link">
+              <div class="project-card__image-wrapper">
+                <img src="assets/cases/case-4-alfa/ru/alfa.webp" alt="Alfa Bank" class="project-card__image" data-lng="cases_img.case4">
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title h5">Alfa Bank</h3>
+                <p class="project-card__desc body-3" data-lng="home.case4_desc">Внутрикорпоративная система</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <span class="footer__title" data-lng="footer.cta">Давайте работать вместе =)</span>
+      <div class="footer__socials">
+        <a href="mailto:stanislav.shusharin@gmail.com" class="footer__link">
+          <img src="assets/ui/icons/email.svg" alt="Email" class="footer__icon">
+        </a>
+        <a href="https://ru.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener">
+          <img src="assets/ui/icons/linkedin.svg" alt="LinkedIn" class="footer__icon">
+        </a>
+        <a href="https://t.me/Stan_supreme" class="footer__link" target="_blank" rel="noopener">
+          <img src="assets/ui/icons/telegram.svg" alt="Telegram" class="footer__icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/localization.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

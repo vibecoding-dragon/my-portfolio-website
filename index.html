@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Stanislav Shusharin</title>
+  
+  <!-- Фавикон сайта -->
+  <link rel="icon" type="image/svg+xml" href="assets/ui/favicon/favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="assets/ui/favicon/favicon.ico">
+  
+  <!-- Подключение шрифта Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       ХЕДЕР (HEADER)
+       ========================================== -->
+  <header class="header">
+    <div class="container header__container">
+      
+      <a href="index.html" class="header__logo">
+        <img src="assets/ui/icons/logo.svg" alt="Логотип" class="logo-svg">
+        <span class="header__logo-text h6" data-lng="header.logo">Портфолио</span>
+      </a>
+
+      <button class="header__burger" id="burger-toggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="header-nav">
+        <div class="header__menu">
+          <a href="about.html" class="header__link body-1" data-lng="header.nav_about">Обо мне</a>
+          <a href="resume.html" class="header__link body-1" data-lng="header.nav_resume">Резюме</a>
+        </div>
+
+        <div class="header__nav-bottom">
+          <div class="header__mobile-socials">
+            <a href="mailto:stanislav.shusharin@gmail.com" class="footer__link"><img src="assets/ui/icons/email.svg" alt="Email" class="footer__icon"></a>
+            <a href="https://ru.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener"><img src="assets/ui/icons/linkedin.svg" alt="LinkedIn" class="footer__icon"></a>
+            <a href="https://t.me/Stan_supreme" class="footer__link" target="_blank" rel="noopener"><img src="assets/ui/icons/telegram.svg" alt="Telegram" class="footer__icon"></a>
+          </div>
+
+          <div class="lang-switcher-container">
+            <button class="lang-btn" data-lang-set="en">EN</button>
+            <button class="lang-btn lang-btn--active" data-lang-set="ru">RU</button>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       ОСНОВНОЙ КОНТЕНТ (MAIN)
+       ========================================== -->
+  <main class="main-content">
+    
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title gsap-fade" data-lng="home.hero_title">
+          Привет,<br>меня зовут Станислав
+        </h1>
+        <p class="hero__subtitle gsap-fade" data-lng="home.hero_subtitle">
+          Я продуктовый дизайнер и уже больше десяти лет превращаю сложные идеи...
+        </p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <h2 class="projects__title h3 gsap-fade" data-lng="home.projects_title">Проекты</h2>
+        
+        <div class="projects__grid">
+          
+          <!-- КЕЙС 1 -->
+          <article class="project-card project-card--big gsap-project">
+            <a href="case-pulse.html" class="project-card__link">
+              <div class="project-card__image-wrapper">
+                <img src="assets/cases/case-1-pulse/ru/pulse-big.webp" 
+                     alt="Sfera.Pulse" 
+                     class="project-card__image" 
+                     data-lng="cases_img.case1"
+                     data-responsive="true">
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__title h5">Sfera.Pulse</h3>
+                <p class="project-card__desc body-3" data-lng="home.case1_desc">Инструмент аналитики данных</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- Сетка «Три в ряд» -->
+          <div class="projects__subgrid">
+            
+            <!-- КЕЙС 2 -->
+            <article class="project-card project-card--small gsap-project">
+              <a href="case-wellmax.html" class="project-card__link">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/cases/case-2-wellmax/ru/wellmax.webp" 
+                       alt="WellMax" 
+                       class="project-card__image" 
+                       data-lng="cases_img.case2">
+                </div>
+                <div class="project-card__info">
+                  <h3 class="project-card__title h5">WellMax</h3>
+                  <p class="project-card__desc body-3" data-lng="home.case2_desc">Маркетплейс</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- КЕЙС 3 -->
+            <article class="project-card project-card--small gsap-project">
+              <a href="case-cryptouniverse.html" class="project-card__link">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/cases/case-3-cryptouniverse/ru/cryptouniverse.webp" 
+                       alt="CryptoUniverse" 
+                       class="project-card__image" 
+                       data-lng="cases_img.case3">
+                </div>
+                <div class="project-card__info">
+                  <h3 class="project-card__title h5">CryptoUniverse</h3>
+                  <p class="project-card__desc body-3" data-lng="home.case3_desc">Сервис майнинга криптовалют</p>
+                </div>
+              </a>
+            </article>
+
+            <!-- КЕЙС 4 -->
+            <article class="project-card project-card--small gsap-project">
+              <a href="case-alfa.html" class="project-card__link">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/cases/case-4-alfa/ru/alfa.webp" 
+                       alt="Alfa Bank" 
+                       class="project-card__image" 
+                       data-lng="cases_img.case4">
+                </div>
+                <div class="project-card__info">
+                  <h3 class="project-card__title h5">Alfa Bank</h3>
+                  <p class="project-card__desc body-3" data-lng="home.case4_desc">Внутрикорпоративная система</p>
+                </div>
+              </a>
+            </article>
+
+          </div> <!-- /projects__subgrid -->
+
+        </div> <!-- /projects__grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       ФУТЕР (FOOTER)
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <span class="footer__title" data-lng="footer.cta">Давайте работать вместе =)</span>
+      <div class="footer__socials">
+        <a href="mailto:stanislav.shusharin@gmail.com" class="footer__link">
+          <img src="assets/ui/icons/email.svg" alt="Email" class="footer__icon">
+        </a>
+        <a href="https://ru.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener">
+          <img src="assets/ui/icons/linkedin.svg" alt="LinkedIn" class="footer__icon">
+        </a>
+        <a href="https://t.me/Stan_supreme" class="footer__link" target="_blank" rel="noopener">
+          <img src="assets/ui/icons/telegram.svg" alt="Telegram" class="footer__icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/localization.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
