@@ -1,4 +1,4 @@
-let currentLang = localStorage.getItem('language') || 'ru';
+let currentLang = localStorage.getItem('language') || 'en';
 let cachedTranslations = null;
 
 async function loadLanguage(lang) {
@@ -33,16 +33,9 @@ function updateDOM() {
 
   /*
     Три режима переключения картинок:
-
     1) data-responsive="true"  — карточки на главной.
-       Мобильная картинка на: ≤ 1100 (планшет/мобилка) ИЛИ ≥ 1400 (ультраширокая сетка 2х2).
-
     2) data-responsive="case"  — обложки на страницах кейсов.
-       Мобильная картинка ТОЛЬКО на ≤ 768. На всех остальных ширинах (включая ≥ 1400) — cover.
-
-    3) Карточки внутри секции .case-other («Другие проекты» на страницах кейсов).
-       Всегда маленькие (3 колонки на десктопе, 1 на мобилке) → всегда мобильная картинка.
-       Это работает автоматически по наличию контейнера .case-other — доп. атрибут не нужен.
+    3) Карточки внутри секции .case-other — всегда мобильная картинка.
   */
   const isMobileHomepage = w <= 1100 || w >= 1400;
   const isMobileCase = w <= 768;
@@ -56,17 +49,14 @@ function updateDOM() {
         const respMode = element.getAttribute('data-responsive');
 
         if (respMode && typeof value === 'object') {
-          // Определяем контекст карточки
           const inOtherSection = element.closest('.case-other') !== null;
 
           let useMobile;
           if (respMode === 'case') {
             useMobile = isMobileCase;
           } else if (inOtherSection) {
-            // «Другие проекты» — карточки всегда маленькие
             useMobile = true;
           } else {
-            // Главная страница
             useMobile = isMobileHomepage;
           }
 
@@ -95,13 +85,12 @@ function updateSwitcherUI(lang) {
 
 function initSwitcher() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    // Полностью очищаем любые старые слушатели клика, чтобы избежать конфликтов
     const newBtn = btn.cloneNode(true);
     btn.parentNode.replaceChild(newBtn, btn);
     
     newBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      e.stopImmediatePropagation(); // Полная изоляция от сторонних перехватчиков кликов
+      e.stopImmediatePropagation();
       
       const selectedLang = newBtn.getAttribute('data-lang-set');
       if (selectedLang && selectedLang !== currentLang) {
@@ -111,8 +100,7 @@ function initSwitcher() {
   });
 }
 
-// Debounce для resize: updateDOM вызывается не чаще, чем раз в 150мс,
-// чтобы не гонять DOM-обход сотни раз во время перетаскивания окна.
+// Debounce для resize
 let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);

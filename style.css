@@ -1036,7 +1036,12 @@ h6, .h6 { font-size: 24px; font-weight: 600; line-height: 24px; }
     top: 84px;
     right: -100%;
     width: 100%;
-    height: calc(100vh - 84px);
+    
+    /* Фикс высоты для мобильных браузеров */
+    height: calc(100vh - 84px);  /* Фолбэк для старых браузеров */
+    height: calc(100dvh - 84px); /* Динамическая высота (учет адресной строки) */
+    overflow-y: auto;            /* Позволяет скроллить меню, если экран маленький */
+    
     background-color: #000000;
     display: flex;
     flex-direction: column;
@@ -1079,9 +1084,11 @@ h6, .h6 { font-size: 24px; font-weight: 600; line-height: 24px; }
   .header__nav-bottom {
     width: 100%;
     justify-content: space-between;
-    padding: 24px 24px 44px 24px;
+    /* Фикс для iPhone (Safe Area) */
+    padding: 24px 24px calc(24px + env(safe-area-inset-bottom)) 24px; 
     background-color: #000000;
     border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    flex-shrink: 0; 
   }
 
   .header__mobile-socials {
