@@ -6,7 +6,7 @@
   },
   "home": {
     "hero_title": "Hi,<br>I'm Stanislav",
-    "hero_subtitle": "I'm a product designer with over ten years of experience turning complex ideas<br>into intuitive services and applications. I use AI tools<br>to speed up concept generation, UX copywriting, and routine optimization.",
+    "hero_subtitle": "I'm a product designer with over ten years of experience turning complex ideas <br>into intuitive services and applications. I use AI tools <br>to speed up concept generation, UX copywriting, and routine optimization.",
     "projects_title": "Projects",
     "case1_desc": "Data Analytics Tool",
     "case2_desc": "Marketplace",
@@ -86,7 +86,7 @@
   },
   "about": {
     "title": "About me",
-    "intro_title": "Let's get acquainted!<br>I'm Stanislav Shusharin",
+    "intro_title": "Let's get acquainted! <br>I'm Stanislav Shusharin",
     "intro_desc": "And I design B2C and B2B user interfaces for complex, high-load web and mobile applications (for iOS and Android), as well as websites. I have experience working both in startups as the sole designer and in large companies as part of design teams.",
     "stat1_num": "10+",
     "stat1_label": "years of experience as a designer",
@@ -199,7 +199,7 @@
     "tag_type": "Case Study",
     "tag_industry": "E-Commerce",
     "tag_platform": "Mobile",
-    "title": "Mobile app<br>for a marketplace",
+    "title": "Mobile app <br>for a marketplace",
     "subtitle": "for Android and iOS",
 
     "overview_title": "Overview",
@@ -270,7 +270,7 @@
 
     "wf1_text": "<p>I began the project by gathering requirements and conducting in-depth interviews. Based on them, I wrote user stories and developed the information architecture for the websites and apps. Then I moved on to wireframes. Once they were approved, I started searching for a visual concept.</p><p>Cryptocurrency mining was perceived as a technology of the future. Neon colors perfectly conveyed that feeling, and space imagery became a metaphor for scale and potential.</p><p>I drew the final mockups and handed them off to developers. Design reviews and usability testing of the implemented solutions helped introduce necessary corrections to the mockups.</p><p>But one important question remained: <strong>how to help users decide whether to place their miners in the mining hotel?</strong> That's how the idea for a new feature emerged — a payback calculator.</p><p>Initially, it was planned to be placed only on the mining hotel website, and later to add a CTA to call it from the equipment section in the personal account and mobile app.</p>",
 
-    "wf2_title": "Payback calculator for a miner<br class=\"br-desktop\">at a mining hotel",
+    "wf2_title": "Payback calculator for a miner <br class=\"br-desktop\">at a mining hotel",
 
     "wf2_col1": "<p><strong>Product context</strong><br>A mining hotel is a facility where users place their equipment (or rent it).</p><p>For it, I designed a website with a personal account and a mobile app with the following sections:</p><ul><li><strong>Dashboard</strong> — mining charts.</li><li><strong>Payouts</strong> — earnings and withdrawals.</li><li><strong>Equipment</strong> — a table with the characteristics of connected devices.</li><li><strong>Settings.</strong></li><li><strong>Profile.</strong></li></ul><p>Mining hotel clients are people who already own a miner or are considering buying one. They come to the mining hotel so they don't have to maintain the miners themselves.</p>",
 
