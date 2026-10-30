@@ -3,29 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Stanislav Shusharin</title>
+  <title>Резюме | Stanislav Shusharin</title>
   
-  <!-- SEO & Open Graph -->
-  <meta name="description" content="Product Designer Stanislav Shusharin. 10+ years of experience, projects in Big Data, Blockchain, E-Commerce, EdTech, and Enterprise. Portfolio of cases and resume.">
-  
-  <!-- Open Graph (для Telegram, LinkedIn, WhatsApp и др.) -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vibecoding-dragon.github.io/my-portfolio-website/">
-  <meta property="og:title" content="Portfolio | Stanislav Shusharin">
-  <meta property="og:description" content="Product Designer Stanislav Shusharin. 10+ years of experience, projects in Big Data, Blockchain, E-Commerce, EdTech, and Enterprise. Portfolio of cases and resume.">
-  <meta property="og:image" content="https://vibecoding-dragon.github.io/my-portfolio-website/assets/OG.png">
-  
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio | Stanislav Shusharin">
-  <meta name="twitter:description" content="Product Designer Stanislav Shusharin. 10+ years of experience, projects in Big Data, Blockchain, E-Commerce, EdTech, and Enterprise. Portfolio of cases and resume.">
-  <meta name="twitter:image" content="https://vibecoding-dragon.github.io/my-portfolio-website/assets/OG.png">
-
   <!-- Фавикон сайта -->
   <link rel="icon" type="image/svg+xml" href="assets/ui/favicon/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="assets/ui/favicon/favicon.ico">
   
-  <!-- Подключение шрифта Inter -->
+  <!-- Шрифт Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -34,147 +18,201 @@
 </head>
 <body>
 
-  <!-- ==========================================
-       ХЕДЕР (HEADER)
-       ========================================== -->
+  <!-- ШАПКА САЙТА -->
   <header class="header">
     <div class="container header__container">
-      
       <a href="index.html" class="header__logo">
         <img src="assets/ui/icons/logo.svg" alt="Логотип" class="logo-svg">
         <span class="header__logo-text h6" data-lng="header.logo">Портфолио</span>
       </a>
-
       <button class="header__burger" id="burger-toggle" aria-label="Открыть меню">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-
       <nav class="header__nav" id="header-nav">
         <div class="header__menu">
           <a href="about.html" class="header__link body-1" data-lng="header.nav_about">Обо мне</a>
-          <a href="resume.html" class="header__link body-1" data-lng="header.nav_resume">Резюме</a>
+          <a href="resume.html" class="header__link body-1 header__link--active" data-lng="header.nav_resume">Резюме</a>
         </div>
-
         <div class="header__nav-bottom">
           <div class="header__mobile-socials">
             <a href="mailto:stanislav.shusharin@gmail.com" class="footer__link"><img src="assets/ui/icons/email.svg" alt="Email" class="footer__icon"></a>
-            <a href="https://ru.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener"><img src="assets/ui/icons/linkedin.svg" alt="LinkedIn" class="footer__icon"></a>
+            <a href="https://www.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener"><img src="assets/ui/icons/linkedin.svg" alt="LinkedIn" class="footer__icon"></a>
             <a href="https://t.me/Stan_supreme" class="footer__link" target="_blank" rel="noopener"><img src="assets/ui/icons/telegram.svg" alt="Telegram" class="footer__icon"></a>
           </div>
-
           <div class="lang-switcher-container">
             <button class="lang-btn lang-btn--active" data-lang-set="en">EN</button>
             <button class="lang-btn" data-lang-set="ru">RU</button>
           </div>
         </div>
       </nav>
-
     </div>
   </header>
 
-  <!-- ==========================================
-       ОСНОВНОЙ КОНТЕНТ (MAIN)
-       ========================================== -->
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
   <main class="main-content">
-    
-    <section class="hero">
-      <div class="container hero__container">
-        <h1 class="hero__title gsap-fade" data-lng="home.hero_title">
-          Привет,<br>меня зовут Станислав
-        </h1>
-        <p class="hero__subtitle gsap-fade" data-lng="home.hero_subtitle">
-          Я продуктовый дизайнер и уже больше десяти лет превращаю сложные идеи...
-        </p>
-      </div>
-    </section>
+    <div class="container resume-page">
 
-    <section class="projects">
-      <div class="container">
-        <h2 class="projects__title h3 gsap-fade" data-lng="home.projects_title">Проекты</h2>
-        
-        <div class="projects__grid">
-          
-          <!-- КЕЙС 1 -->
-          <article class="project-card project-card--big gsap-project">
-            <a href="case-pulse.html" class="project-card__link">
-              <div class="project-card__image-wrapper">
-                <img src="assets/cases/case-1-pulse/ru/pulse-big.webp" 
-                     alt="Sfera.Pulse" 
-                     class="project-card__image" 
-                     data-lng="cases_img.case1"
-                     data-responsive="true">
+      <h1 class="resume-page__title gsap-fade" data-lng="resume.title">Резюме</h1>
+
+      <div class="resume-content">
+
+        <!-- ====================== ОПЫТ РАБОТЫ ====================== -->
+        <section class="resume-section">
+          <h2 class="resume-section__title gsap-project" data-lng="resume.experience_title">Опыт работы</h2>
+          <div class="resume-list">
+
+            <!-- НОВЫЙ ОПЫТ РАБОТЫ -->
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp0_date">2025 — настоящее время</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp0_pos">Независимый продуктовый дизайнер / UX-консультант</h3>
+                <div class="resume-item__desc" data-lng="resume.exp0_desc"></div>
               </div>
-              <div class="project-card__info">
-                <h3 class="project-card__title h5">Sfera.Pulse</h3>
-                <p class="project-card__desc body-3" data-lng="home.case1_desc">Инструмент аналитики данных</p>
+            </article>
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp1_date">2023 — 2025</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp1_pos">Иннотех (холдинг T1), продуктовый дизайнер</h3>
+                <div class="resume-item__desc" data-lng="resume.exp1_desc"></div>
               </div>
-            </a>
-          </article>
-
-          <!-- Сетка «Три в ряд» -->
-          <div class="projects__subgrid">
-            
-            <!-- КЕЙС 2 -->
-            <article class="project-card project-card--small gsap-project">
-              <a href="case-wellmax.html" class="project-card__link">
-                <div class="project-card__image-wrapper">
-                  <img src="assets/cases/case-2-wellmax/ru/wellmax.webp" 
-                       alt="WellMax" 
-                       class="project-card__image" 
-                       data-lng="cases_img.case2">
-                </div>
-                <div class="project-card__info">
-                  <h3 class="project-card__title h5">WellMax</h3>
-                  <p class="project-card__desc body-3" data-lng="home.case2_desc">Маркетплейс</p>
-                </div>
-              </a>
             </article>
 
-            <!-- КЕЙС 3 -->
-            <article class="project-card project-card--small gsap-project">
-              <a href="case-cryptouniverse.html" class="project-card__link">
-                <div class="project-card__image-wrapper">
-                  <img src="assets/cases/case-3-cryptouniverse/ru/cryptouniverse.webp" 
-                       alt="CryptoUniverse" 
-                       class="project-card__image" 
-                       data-lng="cases_img.case3">
-                </div>
-                <div class="project-card__info">
-                  <h3 class="project-card__title h5">CryptoUniverse</h3>
-                  <p class="project-card__desc body-3" data-lng="home.case3_desc">Сервис майнинга криптовалют</p>
-                </div>
-              </a>
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp2_date">2019 — 2022</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp2_pos">GridGain Systems, продуктовый дизайнер</h3>
+                <div class="resume-item__desc" data-lng="resume.exp2_desc"></div>
+              </div>
             </article>
 
-            <!-- КЕЙС 4 -->
-            <article class="project-card project-card--small gsap-project">
-              <a href="case-alfa.html" class="project-card__link">
-                <div class="project-card__image-wrapper">
-                  <img src="assets/cases/case-4-alfa/ru/alfa.webp" 
-                       alt="Alfa Bank" 
-                       class="project-card__image" 
-                       data-lng="cases_img.case4">
-                </div>
-                <div class="project-card__info">
-                  <h3 class="project-card__title h5">Alfa Bank</h3>
-                  <p class="project-card__desc body-3" data-lng="home.case4_desc">Внутрикорпоративная система</p>
-                </div>
-              </a>
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp3_date">2018 — 2019</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp3_pos">Евразийское Финансовое Объединение, дизайнер мобильных приложений</h3>
+                <div class="resume-item__desc" data-lng="resume.exp3_desc"></div>
+              </div>
             </article>
 
-          </div> <!-- /projects__subgrid -->
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp4_date">2018</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp4_pos">CryptoUniverse, дизайнер интерфейсов</h3>
+                <div class="resume-item__desc" data-lng="resume.exp4_desc"></div>
+              </div>
+            </article>
 
-        </div> <!-- /projects__grid -->
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp5_date">2017 — 2018</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp5_pos">Estelab, главный дизайнер</h3>
+                <div class="resume-item__desc" data-lng="resume.exp5_desc"></div>
+              </div>
+            </article>
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp6_date">2016 — 2017</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp6_pos">PBN Hill+Knowlton Strategies, креативный дизайнер</h3>
+                <div class="resume-item__desc" data-lng="resume.exp6_desc"></div>
+              </div>
+            </article>
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp7_date">2015 — 2016</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp7_pos">Издательский центр «Академия», дизайнер интерфейсов</h3>
+                <div class="resume-item__desc" data-lng="resume.exp7_desc"></div>
+              </div>
+            </article>
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.exp8_date">2012 — 2015</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.exp8_pos">АРВД, графический дизайнер</h3>
+                <div class="resume-item__desc" data-lng="resume.exp8_desc"></div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ====================== ОБРАЗОВАНИЕ ====================== -->
+        <section class="resume-section">
+          <h2 class="resume-section__title gsap-project" data-lng="resume.education_title">Образование</h2>
+          <div class="resume-list">
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.edu1_date">2025</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.edu1_univ">Восточно-Европейский институт психоанализа</h3>
+                <p class="resume-item__desc" data-lng="resume.edu1_degree">Психолог-консультант (переподготовка)</p>
+              </div>
+            </article>
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.edu2_date">2014</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.edu2_univ">Омский государственный технический университет</h3>
+                <p class="resume-item__desc" data-lng="resume.edu2_degree">Философская антропология, философия культуры (кандидат наук)</p>
+              </div>
+            </article>
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.edu3_date">2012</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.edu3_univ">Омский государственный технический университет</h3>
+                <p class="resume-item__desc" data-lng="resume.edu3_degree">Переводчик в сфере профессиональной коммуникации (высшее)</p>
+              </div>
+            </article>
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.edu4_date">2012</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.edu4_univ">Омский государственный технический университет</h3>
+                <p class="resume-item__desc" data-lng="resume.edu4_degree">Специалист по рекламе (высшее)</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ====================== КУРСЫ ====================== -->
+        <section class="resume-section">
+          <h2 class="resume-section__title gsap-project" data-lng="resume.courses_title">Курсы</h2>
+          <div class="resume-list">
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.course1_date">2019 — 2021</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.course1_name">The Interaction Design Foundation</h3>
+                <p class="resume-item__desc" data-lng="resume.course1_desc">Более 30 курсов по UX/UI-дизайну</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ====================== СЕРТИФИКАТЫ ====================== -->
+        <section class="resume-section">
+          <h2 class="resume-section__title gsap-project" data-lng="resume.certificates_title">Сертификаты</h2>
+          <div class="resume-list">
+
+            <article class="resume-item gsap-project">
+              <div class="resume-item__date" data-lng="resume.cert1_date">2017</div>
+              <div class="resume-item__content">
+                <h3 class="resume-item__position" data-lng="resume.cert1_name">Cambridge Advanced (C1)</h3>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
       </div>
-    </section>
-
+    </div>
   </main>
 
-  <!-- ==========================================
-       ФУТЕР (FOOTER)
-       ========================================== -->
+  <!-- ПОДВАЛ -->
   <footer class="footer">
     <div class="container footer__container">
       <span class="footer__title" data-lng="footer.cta">Давайте работать вместе =)</span>
@@ -182,7 +220,7 @@
         <a href="mailto:stanislav.shusharin@gmail.com" class="footer__link">
           <img src="assets/ui/icons/email.svg" alt="Email" class="footer__icon">
         </a>
-        <a href="https://ru.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/stanislav-shusharin" class="footer__link" target="_blank" rel="noopener">
           <img src="assets/ui/icons/linkedin.svg" alt="LinkedIn" class="footer__icon">
         </a>
         <a href="https://t.me/Stan_supreme" class="footer__link" target="_blank" rel="noopener">
